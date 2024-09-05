@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; // Ensure you have this import for styling
 import serviceImage from './serviceImage.png'; // Replace with the path to your image
+import FeatureSection from './components/FeatureSection'; // Correct import path
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <img src={serviceImage} alt="Service" className="service-image" />
         </div>
       </main>
+      <FeatureSection /> {/* Correct placement of FeatureSection */}
     </div>
   );
 }
