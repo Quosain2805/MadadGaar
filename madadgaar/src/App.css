@@ -1,0 +1,105 @@
+/* App.css */
+
+/* General styling */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 0;
+  color: white;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 80px; /* Height set for the navbar */
+  background-color: #003366; /* Changed to dark blue */
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: white;
+  margin-top: -20px;
+}
+
+.content-left {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.main-heading {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.sub-heading {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.consultation-button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.content-right {
+  flex: 1;
+  text-align: right;
+}
+
+.service-image {
+  width: 60vw;
+  max-width: 800px;
+  height: auto;
+}
