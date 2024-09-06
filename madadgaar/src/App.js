@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css'; // Ensure you have this import for styling
 import serviceImage from './serviceImage.png'; // Replace with the path to your image
 import FeatureSection from './components/FeatureSection'; // Correct import path
+import AboutUs from './components/AboutUs'; // Import the AboutUs component
+import ServicesPage from './components/ServicesPage';
+ // Ensure ServicesPage is included
 
 function App() {
   return (
@@ -17,17 +20,36 @@ function App() {
           </ul>
         </nav>
       </header>
+
       <main className="main-content">
         <div className="content-left">
-          <h1 className="main-heading">Connect with<br />Skilled<br />Professionals for<br />All Your Needs</h1>
-          <p className="sub-heading">Find experts in IT, painting, cooking, tailoring, and more—right at your fingertips!</p>
+          <h1 className="main-heading">
+            Connect with<br />
+            Skilled<br />
+            Professionals for<br />
+            All Your Needs
+          </h1>
+          <p className="sub-heading">
+            Find experts in IT, painting, cooking, tailoring, and more—right at your fingertips!
+          </p>
           <button className="consultation-button">Book a Consultation</button>
         </div>
         <div className="content-right">
           <img src={serviceImage} alt="Service" className="service-image" />
         </div>
       </main>
-      <FeatureSection /> {/* Correct placement of FeatureSection */}
+
+      <FeatureSection />
+
+      {/* About Us Section */}
+      <section id="about">
+        <AboutUs />
+      </section>
+
+      {/* Services Section */}
+      <section id="services">
+        <ServicesPage />
+      </section>
     </div>
   );
 }
