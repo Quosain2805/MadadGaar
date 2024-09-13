@@ -3,6 +3,7 @@
 /* General styling */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .App-header {
@@ -11,20 +12,29 @@
   color: white;
 }
 
+h2 {
+  font-size: 27px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  color: #333;
+}
+
 /* Navigation Bar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 80px; /* Height set for the navbar */
-  background-color: #003366; /* Changed to dark blue */
+  height: 80px;
+  background-color: #003366;
   z-index: 1000;
+  margin-bottom: 30px;
 }
 
 .logo {
   font-size: 1.5em;
   font-weight: bold;
+  color: white;
 }
 
 .nav-links {
@@ -54,16 +64,23 @@
 .main-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 20px;
+  align-items: flex-start; /* Align items to the start to keep the image up */
+  padding: 30px 20px;
   background-color: white;
-  margin-top: -20px;
+  margin-left: 30px;
 }
 
 .content-left {
   flex: 1;
   text-align: left;
   padding-right: 20px;
+}
+
+.content-right {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  align-items: flex-start; /* Ensure the image aligns to the top */
 }
 
 .main-heading {
@@ -77,15 +94,17 @@
   margin: 20px 0;
 }
 
+/* Adjusted Button Styling */
 .consultation-button {
   background-color: #003366;
   color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.2em;
+  padding: 10px 20px; /* Adjusted padding for better button size */
+  font-size: 1.1em;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  width: 100%; /* Changed to auto for better flexibility */
 }
 
 .consultation-button:hover {
@@ -93,62 +112,10 @@
   color: black;
 }
 
-.content-right {
-  flex: 1;
-  text-align: right;
-}
-
+/* Adjusted Image Styling */
 .service-image {
-  width: 60vw;
-  max-width: 800px;
-  height: auto;
-}
-/* Feature Section Styling */
-.feature-section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 10px; /* Reduce the gap between items */
-  padding: 10px 0; /* Less padding on top/bottom */
-  background-color: #fff;
-  justify-items: center; /* Center align items horizontally */
-}
-
-.feature-item {
-  text-align: center;
-  max-width: 180px; /* Compress the items */
-  padding: 5px; /* Reduce internal padding */
-}
-
-.feature-icon {
-  color: #0033cc; /* Blue color */
-  margin-bottom: 5px; /* Reduce margin below the icon */
-}
-
-.feature-item h3 {
-  margin-top: 5px;
-  font-size: 1.1rem; /* Slightly smaller font */
-}
-
-.feature-item p {
-  font-size: 0.85rem; /* Slightly smaller font for description */
-  color: #666;
-  margin: 5px 0; /* Compress vertical space */
-}
-
-/* Responsiveness for smaller screens */
-@media (max-width: 768px) {
-  .feature-section {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .feature-section {
-    grid-template-columns: 1fr; /* 1 column for mobile */
-    padding: 5px 0; /* Reduce padding on smaller screens */
-  }
-
-  .feature-item {
-    max-width: 160px; /* Compress items further on small screens */
-  }
+  width: 100%; /* Full width of its container */
+  max-width: 1000px; /* Adjust max-width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the entire image is visible */
 }

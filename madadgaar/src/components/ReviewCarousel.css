@@ -1,0 +1,20 @@
+/* src/components/ReviewCarousel/ReviewCarousel.css */
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .control-next.control-arrow:before,
+.carousel .control-prev.control-arrow:before {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000; /* Updated arrow color to match your pattern */
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 10px solid #000; /* Next arrow color */
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 10px solid #000; /* Previous arrow color */
+}

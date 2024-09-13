@@ -3,13 +3,15 @@
     padding: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px; /* Center the content with a max width */
 }
-  
+
 h1 {
     font-size: 32px;
     margin-bottom: 10px;
 }
-  
+
 .services-description {
     font-size: 18px;
     margin-bottom: 20px;
@@ -17,77 +19,113 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-  
+
 /* Grid layout for services */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for smaller cards */
     gap: 20px;
+    justify-content: center; /* Center the grid */
+    padding: 0 20px; /* Add padding to the sides */
 }
-  
+
 /* Service card styling */
 .service-card {
-    width: 360px; /* Fixed width */
-    height: 480px; /* Fixed height */
-    position: relative; /* Allow positioning with top */
-    top: 79px; /* Distance from the top */
+    width: 250px; /* Smaller card width */
+    height: 320px; /* Fixed height for uniform look */
     border: 1px solid #ccc;
-    border-radius: 12px 0 0 0; /* Rounded corners */
+    border-radius: 8px;
     padding: 10px;
     text-align: left;
     transition: transform 0.3s ease;
     background-color: #D4AF37C9;
-    opacity: 0; /* Fully transparent */
-    gap: 0px; /* Gap property, may not be applicable directly */
+    position: relative; /* Allow button to be positioned at the corner */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
 }
-  
+
 .service-card:hover {
     transform: scale(1.05);
 }
-  
+
 .service-image {
-    width: 100%;
-    height: 240px;
+    width: 100%; /* Full width inside card */
+    height: 120px; /* Adjusted height for a compact view */
     object-fit: cover;
     border-radius: 4px;
+    margin-bottom: 5px; /* Reduce space below the image */
 }
-  
+
 .service-info {
-    padding: 10px;
+    padding: 5px 0 0 0; /* Remove unnecessary padding above the heading */
+    flex-grow: 1; /* Allow the info to take up remaining space */
 }
-  
+
 .service-info h2 {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 0; /* Remove any space above the heading */
+}
+
+.service-info p {
+    font-size: 14px;
     margin-bottom: 5px;
 }
-  
-.service-info p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-  
+
+/* Button positioned in the bottom right corner of the card */
 .enabled-button {
     background-color: #1524B2;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 5px;
+    width: 100px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right side */
 }
-  
+
 .enabled-button:hover {
     background-color: #0056b3;
 }
-  
+
 /* Responsive design */
 @media (max-width: 768px) {
+    .services-page {
+        padding: 10px;
+    }
+
     .services-description {
         font-size: 16px;
     }
     
+    .services-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller cards for small screens */
+        gap: 15px;
+    }
+
     .service-card {
-        padding: 15px;
-        top: auto; /* Reset top positioning */
+        width: 200px;
+        padding: 10px;
+        height: 350px; /* Adjusted height for smaller screens */
+    }
+
+    .service-image {
+        height: 100px;
+    }
+
+    .service-info h2 {
+        font-size: 18px;
+    }
+
+    .service-info p {
+        font-size: 13px;
+    }
+
+    .enabled-button {
+        font-size: 12px;
+        padding: 6px 10px;
     }
 }

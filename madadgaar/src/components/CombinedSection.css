@@ -1,0 +1,69 @@
+.combined-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 150px; /* Increased right margin */
+  }
+  
+  .content-section {
+    width: 45%; /* Content takes less space */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4em; /* Adjusted font size for content */
+    margin-left: 70px;
+  }
+  
+  .form-section {
+    width: 30%; /* Reduced form width */
+    padding: 20px;
+    background-color: #D4AF37C9; /* Background color for form */
+    border-radius: 8px;
+    height: auto; /* Form height adapts based on content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+  }
+  
+  .form-group {
+    margin-bottom: 10px; /* Reduced margin between form fields */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1em; /* Adjust label font size */
+  }
+  
+  input, textarea {
+    width: 85%; /* Reduced width of input and textarea */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input {
+    height: 30px; /* Reduced height of input fields */
+  }
+  
+  textarea {
+    height: 80px; /* Reduced height of textarea */
+  }
+  
+  button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Adjusted button size */
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Button takes full width */
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #002244; /* Darker color on hover */
+  }
+  

@@ -234,6 +234,7 @@ function ServicesPage() {
           <div className="service-card" key={index}>
             <img src={service.image} alt={service.name} className="service-image" />
             <div className="service-info">
+              
               <h2>{service.name}</h2>
               <p>{service.experience}</p>
               <p>{service.description}</p>

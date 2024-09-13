@@ -1,77 +1,61 @@
-/* General styles for the container and main text */
 .container {
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    margin-top: 20px;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-top: 20px;
-  }
-  
-  .content-section {
-    display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.section:nth-child(odd) {
+  flex-direction: row;
+}
+
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Removed image-related properties */
+
+.text-content {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px; /* Adjusted font size for readability */
+  text-align: justify; /* Adjusted text alignment */
+  width: 80%; /* Adjusted width to fit better */
+  padding: 10px; /* Added padding for better spacing */
+}
+
+.payment-method {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .section {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
-  
-  /* Section styling with text and image */
-  .section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-  }
-  
-  .payment-method {
-    font-size: 16px;
-    width: 200px;
-    text-align: left;
-  }
-  
-  /* Image styling */
-  .image {
-    width: 300px;
-    height: 254px;
-    object-fit: cover;
-    opacity: 1;
-  }
-  
-  /* Text content styling */
+
   .text-content {
-    max-width: 484px;
-    height: auto;
-    padding: 20px;
-    line-height: 1.5;
-    font-size: 16px;
-    text-align: left;
+    width: 100%; /* Adjusted width for small screens */
+    text-align: center; /* Center text on small screens */
+    font-size: 12px; /* Slightly larger font size for readability */
   }
-  
-  p {
-    margin: 0;
-    opacity: 1;
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 768px) {
-    .section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .image, .text-content {
-      width: 100%;
-      max-width: 484px;
-      text-align: center;
-    }
-  }
-  
+}

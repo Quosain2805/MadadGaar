@@ -8,14 +8,8 @@ function AboutUs() {
       <div className="content-section">
         {/* First Section */}
         <div className="section">
-          <div className="payment-method">
-            Pay by cash, cheque, or online banking
-          </div>
-          <img 
-            src={require('./assets/img1madadgaar.jpg')} 
-            alt="Cleaning Service" 
-            className="image"
-          />
+           <h2>Pay by cash, cheque, or online banking!</h2>
+         
           <div className="text-content">
             <p>
               Welcome to Askari Services Hub! We proudly serve the residents of Askari 1, 2, 3, 4, and 5 
@@ -39,11 +33,7 @@ function AboutUs() {
               satisfaction are our top priorities—let us take care of the rest!
             </p>
           </div>
-          <img 
-            src={require('./assets/img1madadgaar.jpg')} 
-            alt="Cleaning Service" 
-            className="image"
-          />
+         
         </div>
       </div>
     </div>

@@ -1,0 +1,101 @@
+.footer-container {
+    background-color: #d9b559; /* Gold-like color */
+    padding: 20px;
+    color: #ffffff;
+    margin-top: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-left p {
+    color: #000;
+    margin: 5px 0;
+  }
+  
+  .footer-middle h4 {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .btn-contact {
+    background-color: #15151b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-right .subscribe {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-right input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 2;
+  }
+  
+  .btn-subscribe {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    color: #0056b3;
+    font-size: 32px; /* Increase the size from 24px to 32px */
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #000; /* Changes color when hovering */
+  }
+  
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    color: #000;
+  }
+  
+  .footer-bottom a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  

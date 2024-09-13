@@ -1,0 +1,38 @@
+/* src/components/ReviewCard/ReviewCard.css */
+.review-card {
+    background-color: #d5a74f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 100px;
+    text-align: center;
+    min-height: 300px;
+    margin-bottom: 30px;
+  }
+  
+  .review-text {
+    font-style: italic;
+    color: #fff;
+  }
+  
+  .review-author {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1c1c1c;
+  }
+  
+  .review-designation {
+    color: #333;
+  }
+  
+  .review-stars {
+    margin-top: 10px;
+  }
+  
+  .filled-star {
+    color: #080600c9;
+  }
+  
+  .empty-star {
+    color: #ccc;
+  }
+  
